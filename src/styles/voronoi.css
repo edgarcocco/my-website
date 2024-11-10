@@ -1,0 +1,124 @@
+:global(#vonoroi) {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  height: -webkit-fill-available;
+  --voronoi-background: #080e20;
+  background-color: var(--voronoi-background);
+}
+
+:global(#vonoroi) :global(.links) {
+  stroke: var(--voronoi-lines);
+  stroke-opacity: 0.2;
+}
+
+:global(#vonoroi) :global(.polygons) {
+  fill: none;
+  stroke: var(--voronoi-lines);
+}
+
+:global(#vonoroi) :global(.polygons :first-child) {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+
+:global(#vonoroi) :global(.deselect-polygon) {
+  fill: var(--voronoi-background) !important;
+}
+
+:global(#vonoroi) :global(.sites) {
+  fill: none;
+  stroke: none;
+}
+
+:global(#vonoroi) :global(.sites :first-child) {
+  fill: none;
+  stroke: none;
+}
+
+:global(#vonoroi) :global(.r-0) {
+  fill: var(--voronoi-r0);
+}
+
+:global(#vonoroi) :global(.r-1) {
+  fill: var(--voronoi-r1);
+}
+
+:global(#vonoroi) :global(.r-2) {
+  fill: var(--voronoi-r2);
+}
+
+:global(#vonoroi) :global(.r-3) {
+  fill: var(--voronoi-r3);
+}
+
+:global(#vonoroi) :global(.r-4) {
+  fill: var(--voronoi-r4);
+}
+
+:global(#vonoroi) :global(.r-5) {
+  fill: var(--voronoi-r5);
+}
+
+:global(#vonoroi) :global(.r-6) {
+  fill: var(--voronoi-r6);
+}
+
+:global(#vonoroi) :global(.r-7) {
+  fill: var(--voronoi-r7);
+}
+
+:global(#vonoroi) :global(.r-8) {
+  fill: var(--voronoi-r8);
+}
+
+:global(#vonoroi) :global(.r-9) {
+  fill: var(--voronoi-r9);
+}
+
+:global(#vonoroi) :global(.r-10) {
+  fill: var(--voronoi-r10);
+}
+
+:global(#vonoroi) :global(.c-1) {
+  fill: var(--voronoi-c1);
+}
+
+:global(#vonoroi) :global(.c-2) {
+  fill: var(--voronoi-c2);
+}
+
+:global(#vonoroi) :global(.c-3) {
+  fill: var(--voronoi-c3);
+}
+
+:global(#vonoroi) :global(.c-4) {
+  fill: var(--voronoi-c4);
+}
+
+:global(#vonoroi) :global(.c-5) {
+  fill: var(--voronoi-c5);
+}
+
+:global(#vonoroi) :global(.c-6) {
+  fill: var(--voronoi-c6);
+}
+
+:global(#vonoroi) :global(.c-7) {
+  fill: var(--voronoi-c7);
+}
+
+:global(#vonoroi) :global(.c-8) {
+  fill: var(--voronoi-c8);
+}
+
+:global(#vonoroi) :global(.c-9) {
+  fill: var(--voronoi-c9);
+}
+
+:global(#vonoroi) :global(.c-10) {
+  fill: var(--voronoi-c10);
+}
+/*# sourceMappingURL=voronoi.css.map */

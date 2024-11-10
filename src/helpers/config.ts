@@ -1,7 +1,7 @@
 import type { SiteConfig } from '$src/types/Config';
 
 const config: SiteConfig = {
-  title: 'Alicia Sykes',
+title: 'Edgar Cocco',
   description: '',
   source: 'https://github.com/lissy93/my-website',
   baseUrl: 'https://as93.net',
@@ -73,8 +73,8 @@ const config: SiteConfig = {
     licenseLink: '',
     copyright: true,
   },
-  githubUser: 'lissy93',
-  defaultTheme: 'callisto',
+  githubUser: 'edgarcocco',
+  defaultTheme: 'light',
   defaultLanguage: 'en',
   colorSchemes: {
     dark: {
@@ -413,20 +413,20 @@ const config: SiteConfig = {
     email: 'alicia@omg.lol',
     website: 'https://aliciasykes.com',
     socials: {
-      Twitter: 'Lissy_Sykes',
-      GitHub: 'Lissy93',
-      'Dev.to': 'Lissy93',
-      Mastodon: '@Lissy93',
-      LinkedIn: 'in/AliciaSykes',
-      Instagram: 'liss.sykes',
-      YouTube: 'AliciaSykes',
-      Reddit: 'lissy93',
-      StackOverflow: '979052/alicia',
-      KeyBase: 'AliciaSykes',
-      Facebook: 'Liss.Sykes',
-      PeerList: 'alicia',
-      CodersRank: 'lissy93',
-      'OMG.lol': 'alicia',
+      Twitter: '',
+      GitHub: 'edgarcocco',
+      'Dev.to': '',
+      Mastodon: '',
+      LinkedIn: 'in/edgarcocco',
+      Instagram: 'edgar.cocco',
+      YouTube: '',
+      Reddit: '',
+      StackOverflow: '',
+      KeyBase: '',
+      Facebook: 'edgar.cocco',
+      PeerList: '',
+      CodersRank: '',
+      'OMG.lol': '',
     },
     socialButtonLimit: 6,
     mailerConfig: {
@@ -478,30 +478,10 @@ const config: SiteConfig = {
   about: {
     intro: 'Just your average dev...',
     bio: [
-      "I'm Alicia, a London-based software engineer.",
-
-      `I have a particular interest in privacy-respecting software, as well as security.
-      I've carried out a few audits, and authored the initial versions of
-      <a href="https://github.com/Lissy93/personal-security-checklist">Personal Security Checklist</a>
-      and <a href="https://github.com/Lissy93/awesome-privacy">Awesome Privacy</a>.`,
-
-      `I enjoy going to (<a href="https://notes.aliciasykes.com/p/0s5s3uOtKj">and sometimes winning!</a>) hackathons.
-      And if you're London-based, you'll probably have bumped into me at a tech meetup.`,
-
-      `I love Linux, and (imo) have a neat
-      <a href="https://github.com/lissy93/dotfiles">dotfiles setup</a> which I'm always tweaking.
-      And I have a small homelab, that I'm using to learn more about system administration,
-      and host my own services to (attempt to) escape big tech.
-      I made <a href="https://github.com/Lissy93/dashy">dashboard app</a> for it.
-      `,
-
-      `For work, I'm a principal software engineer at <a href="https://and.digital/">AND.Digital</a>,
-      where I work across various client projects, help to upskill and mentor junior and mid-level
-      developers and ensure that the code we're delivering is the best it can be.`,
-
+      "I'm Edgar, a software engineer based in Saint Petersburg, Florida.",
       `Away from the keyboard, I like sports, hanging out with friends, and going to Church.`,
     ],
-    picture: 'https://i.ibb.co/svxHFMD/alicia-sykes-3.jpg',
+    picture: 'https://i.ibb.co/qdbkD2t/PXL-20240929-161703972.jpg',
   },
   techStack: {
     backend: [

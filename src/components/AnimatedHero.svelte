@@ -1,7 +1,9 @@
 <script lang="ts">
   import TypeIt from "typeit";
   import { onMount } from 'svelte';
+  import { dataset_dev } from "svelte/internal";
 
+  export let data;
   // Generates a random number of ms between 2 values
   const randomTime = (min: number = 2, max: number = 12) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -13,13 +15,13 @@
     const lines = [
       'Hello 👋',
       '\n',
-      'I\'m Alicia',
-      'I build apps 🛠️',
-      'that put you first 🥇',
-      'with privacy at the core 🔐',
-      'and clear and helpful documentation 📚',
-      'Thanks for visiting 🥰'
+      'I\'m Edgar 🧑‍💻',
+      'I\'m a software developer 💻',
+      'I ❤️\ to code...',
+      '...and learn new things. 📚',
+      'Thanks for visiting 🥰',
     ];
+    console.log(data);
 
     const typeWithVariableSpeed = (instance: TypeIt, text: string) => {
       Array.from(text).forEach(char => {
@@ -31,31 +33,44 @@
       instance.pause(150).break().pause(450);
     };
 
-    const typeItInstance = new TypeIt(".intro");
+    const typeItInstance = new TypeIt(".intro", {
+      afterComplete: function (instance) {
+        instance.destroy();
+      }
+    });
+
     typeItInstance.options({ speed: 10, lifeLike: true });
 
     typeWithVariableSpeed(typeItInstance, lines[0]);
     typeLineBreak(typeItInstance);
+
+    typeWithVariableSpeed(typeItInstance, lines[1]);
     typeLineBreak(typeItInstance);
+
+    //typeWithVariableSpeed(typeItInstance, lines[3]);
+    //typeItInstance.pause(500).move(-8).type(' free').pause(500).type(' and open source').pause(100).move(8);
+    //typeLineBreak(typeItInstance);
 
     typeWithVariableSpeed(typeItInstance, lines[2]);
     typeLineBreak(typeItInstance);
-
     typeWithVariableSpeed(typeItInstance, lines[3]);
-    typeItInstance.pause(500).move(-8).type(' free').pause(500).type(' and open source').pause(100).move(8);
     typeLineBreak(typeItInstance);
-
     typeWithVariableSpeed(typeItInstance, lines[4]);
+    // typeItInstance.pause(500).delete(9).pause(500).type('time ⌚').pause(500).delete(11).type('you 🫵');
+    /*typeLineBreak(typeItInstance);
+    typeLineBreak(typeItInstance);
+    
+    typeWithVariableSpeed(typeItInstance, lines[6]);
+    */
     typeLineBreak(typeItInstance);
     typeWithVariableSpeed(typeItInstance, lines[5]);
     typeLineBreak(typeItInstance);
+    typeLineBreak(typeItInstance);
     typeWithVariableSpeed(typeItInstance, lines[6]);
-    // typeItInstance.pause(500).delete(9).pause(500).type('time ⌚').pause(500).delete(11).type('you 🫵');
     typeLineBreak(typeItInstance);
-    typeLineBreak(typeItInstance);
-    
-    typeWithVariableSpeed(typeItInstance, lines[7]);
+
     typeItInstance.pause(500).go();
+    
 
   });
 
@@ -65,19 +80,26 @@
 
 <header class="container">
   <h3 class="intro"></h3>
+  <blockquote>{data.verse.text}</blockquote>
+  <h4>- {data.verse.reference}</h4> 
 </header>
+
 
 
 <style lang="scss">
 
+header.container{
+  margin-left: 1rem;
+}
 
 h3 {
+  font-family: 'Cascadia Code', 'Poppins', 'Baloo Paaji', cursive;
   font-size: 1.2rem;
   width: 100%;
   line-height: 1.25;
   font-weight: 500;
-  min-width: 32rem;
-  min-height: 12rem;
+  min-width: 22rem;
+  min-height: 8rem;
 }
 
 // // Styling variables

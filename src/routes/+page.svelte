@@ -7,8 +7,7 @@
   import { socialNetworks } from '$src/helpers/constants';
   import Icon from '$src/components/Icon.svelte';
 
-  export let data: any;
-
+  export let data;
   const { routeLinks } = config;
   const homePageLinks = routeLinks.filter((rl) => rl.route !== '/');
 
@@ -20,7 +19,9 @@
   const socialLinks = userSocials.slice(0, limit).map((social) => {
     const socialProps = socialNetworks.find((sn) => sn.name === social);
     if (!socialProps) return null;
+    
     const user = config.contact.socials[social];
+    if(!user) return null;
     return {
       ...socialProps,
       user,
@@ -86,7 +87,10 @@
     color="var(--home-accent-background)">Alicia Sykes</Heading
   > -->
   
-  <h1>Alicia Sykes</h1>
+  <div class="header">
+    <h1>Edgar Cocco</h1>
+    <img src="https://i.ibb.co/dkMdtcR/EDODEV.png" alt="EDODEV" />
+  </div>
   <div class="socials">
     {#each socialLinks as social}
       {#if social}
@@ -108,10 +112,11 @@
       {/if}
     {/each}
   </div>
-  <AnimatedHero />
-
-  <div class="tiles">
-    {#each homePageLinks as navLink}
+  <div class="greek-divisor"></div>
+  <div class="middle-content">
+    <AnimatedHero data={data} />
+    <div class="tiles">
+      {#each homePageLinks as navLink}
       <a
         class="tile"
         href={navLink.route}
@@ -125,24 +130,36 @@
         >
         <p class="subtitle">{navLink.description}</p>
       </a>
-    {/each}
+      {/each}
+    </div>
   </div>
-
+  <div class="greek-divisor"></div>
 </main>
 
 
 <style lang="scss">
   @import '$src/styles/media-queries.scss';
   @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 
   :global(html) {
     scroll-behavior: smooth;
   }
 
+  .greek-divisor {
+    width: 100%;
+    height: 40px;
+    background: url(greek_meanders_strong.svg);
+    background-size: contain;
+    filter: invert(35%) sepia(34%) saturate(510%) hue-rotate(209deg) brightness(88%) contrast(81%);
+  }
   h1 {
     font-size: 5rem;
-    font-family: 'Permanent Marker', 'Poppins', 'Baloo Paaji', cursive;
+    //font-family: 'Montserrat', sans-serif;
+    //font-family: 'CenturyGothic', 'Montserrat', sans-serif;
+    font-family: 'Sour Gummy', 'Montserrat', sans-serif;
+    //font-family: 'Permanent Marker', 'Poppins', 'Baloo Paaji', cursive;
     text-align: center;
     margin: 0 auto;
   }
@@ -150,8 +167,8 @@
   //if light theme
   :global(html[data-theme='light']) {
     h1 {
-      color: #ff4bb9;
-      text-shadow: 3px 3px 0px #35e1f385;
+      color: #FFC398;
+      text-shadow: 3px 3px 0px #5F5980;
     }
   }
 
@@ -160,12 +177,35 @@
     z-index: 2;
     pointer-events: none;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     // min-height: 100vh;
     gap: 2rem;
   }
+  
+  main .header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    & img {
+      width: 128px;
+      height: 128px;
+      border: 3px solid #2a3367;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  }
+  
 
+  div.middle-content {
+    display: flex;
+    flex-direction:row;
+  }
+@media (max-width: 764px) {
+    div.middle-content{
+      flex-direction: column;
+  }
+}
   :global(body) {
     &::after {
       content: "";
@@ -208,12 +248,18 @@
     // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     max-width: 32rem;
     gap: 1rem;
-    width: 80vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     @include tablet-down {
       display: flex;
       flex-direction: column;
+    }
+    @include tablet {
+      width: 80vw;
+    }
+    @include phone {
+      width: 80vw;
     }
     a.tile {
       color: var(--foreground);
@@ -221,7 +267,7 @@
       // background: var(--home-tile-background);
       border-radius: 4px;
       text-decoration: none;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1rem;
       // border-left: 4px solid var(--accent);
       transition: all ease-in-out 0.25s, transform ease-in-out 0.3s;
       overflow: hidden;

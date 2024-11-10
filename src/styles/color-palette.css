@@ -1,5 +1,3 @@
-
-
 :root {
   --background: #ededed;
   --foreground: #2a3367;
@@ -17,7 +15,6 @@
   --home-animated-gradient-inner: #ff8ed05c;
 }
 
-// Dark theme
 :global(html[data-theme='dark']), html[data-theme='dark'] {
   --background: #101010;
   --foreground: #fafafa;
@@ -34,21 +31,17 @@
   --home-accent-foreground: var(--foreground);
 }
 
-// Light theme
 :global(html[data-theme='light']), html[data-theme='light'] {
   --background: #ffecde;
-  //--background: #ededed;
   --foreground: #2a3367;
   --card-background: #F8F8FF;
   --card-border: 1px solid #0000001a;
-  //--home-accent-background: #2a3367;
   --home-accent-background: #5F5980;
   --home-accent-foreground: var(--foreground);
   --home-animated-gradient-outer: #ffe7f500;
   --home-animated-gradient-inner: #ff8ed05c;
 }
 
-// Callisto theme
 :global(html[data-theme='callisto']), html[data-theme='callisto'] {
   --background: #020617;
   --foreground: #dcdcdc;
@@ -65,3 +58,4 @@
   --home-animated-gradient-outer: #0361f700;
   --home-animated-gradient-inner: #2e2d40;
 }
+/*# sourceMappingURL=color-palette.css.map */
