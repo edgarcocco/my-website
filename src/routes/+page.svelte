@@ -150,7 +150,7 @@
   .greek-divisor {
     width: 100%;
     height: 40px;
-    background: url(greek_meanders_strong.svg);
+    background: url('/greek_meanders_strong.svg');
     background-size: contain;
     filter: invert(35%) sepia(34%) saturate(510%) hue-rotate(209deg) brightness(88%) contrast(81%);
   }

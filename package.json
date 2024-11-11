@@ -7,6 +7,7 @@
     "start": "node build/index.js",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "npx gh-pages -d dist",
     "test": "playwright test",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -44,6 +45,7 @@
   "dependencies": {
     "d3": "^7.8.5",
     "d3-delaunay": "^6.0.4",
+    "gh-pages": "^6.2.0",
     "typeit": "^8.8.4"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"

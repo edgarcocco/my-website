@@ -23,6 +23,7 @@ if (process.env.DEPLOY_TARGET === 'NETLIFY') {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: vitePreprocess(),
+  base: "/my-website/",
   kit: {
     adapter: selectedAdapter,
     alias: {
