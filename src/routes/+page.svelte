@@ -115,23 +115,7 @@
   <div class="greek-divisor"></div>
   <div class="middle-content">
     <AnimatedHero data={data} />
-    <div class="tiles">
-      {#each homePageLinks as navLink}
-      <a
-        class="tile"
-        href={navLink.route}
-        style={`--accent: ${findRouteColor(navLink.route)};`}
-        on:click={() => {
-          showLoader = true;
-        }}
-      >
-        <Heading level="h3" size="1.4rem" color="var(--home-accent-foreground)" weight={600}
-          >{navLink.label}</Heading
-        >
-        <p class="subtitle">{navLink.description}</p>
-      </a>
-      {/each}
-    </div>
+    
   </div>
   <div class="greek-divisor"></div>
 </main>
