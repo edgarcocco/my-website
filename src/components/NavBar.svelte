@@ -27,7 +27,6 @@
       >
     {/each}
     <ThemeSwitcher />
-    <LanguageSwitcher />
   </div>
 </nav>
 

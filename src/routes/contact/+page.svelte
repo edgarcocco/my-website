@@ -15,11 +15,17 @@
   export let data;
 
   // Append usernames, and (if available) metrics to available socials
-  let socials: UserSocial[] = socialNetworks.map((social, index) => {
+  let filteredSocialNetworks = socialNetworks.filter((social) =>{
+    const network: typeof SupportedSocials[number] = social.name;
+    return contact.socials[network] != '';
+  }
+  );
+  let socials: UserSocial[] = filteredSocialNetworks.map((social, index) => {
     const network: typeof SupportedSocials[number] = social.name;
     const metrics =
       data?.props[social.name.toLowerCase().replace(/\W/g, '')] || [];
-    return { ...social, user: contact.socials[network], metrics };
+    const user = contact.socials[network];
+      return { ...social, user: user, metrics };
   });
 
   // Limit number of socials to display
@@ -39,7 +45,7 @@
     <!-- Links to social media profiles -->
     <div class="social-buttons">
       {#each socials.slice(0, numSocialsToDisplay) as social}
-        <SocialLink {...social} />
+          <SocialLink {...social} />
       {/each}
     </div>
     <!-- Show more/ less button -->

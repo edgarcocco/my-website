@@ -17,7 +17,7 @@
       '\n',
       'I\'m Edgar 🧑‍💻',
       'I\'m a software developer 💻',
-      'I ❤️\ to code...',
+      'I ❤️ to code...',
       '...and learn new things. 📚',
       'Thanks for visiting 🥰',
     ];
@@ -34,9 +34,9 @@
     };
 
     const typeItInstance = new TypeIt(".intro", {
-      afterComplete: function (instance) {
+      /*afterComplete: function (instance) {
         instance.destroy();
-      }
+      }*/
     });
 
     typeItInstance.options({ speed: 10, lifeLike: true });

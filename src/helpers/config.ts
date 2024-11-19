@@ -3,8 +3,8 @@ import type { SiteConfig } from '$src/types/Config';
 const config: SiteConfig = {
 title: 'Edgar Cocco',
   description: '',
-  source: 'https://github.com/lissy93/my-website',
-  baseUrl: 'https://as93.net',
+  source: 'https://github.com/edgarcocco/my-website',
+  baseUrl: 'https://edgarcocco.com',
   initialFeeds: [{ label: 'Notes', url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blog.atom' }],
   additionalFeeds: [
     { label: 'Notes', url: 'https://notes.aliciasykes.com/feed' },
@@ -40,8 +40,8 @@ title: 'Edgar Cocco',
   ],
 
   routeLinks: [
-    { label: 'Home', route: '/', color: 'var(--accent-1, #ff0099)' },
-    {
+    //{ label: 'Home', route: '/', color: 'var(--accent-1, #ff0099)' },
+    /*{
       label: 'Blog',
       route: '/blog',
       color: 'var(--accent-2, #b45eff)',
@@ -52,7 +52,7 @@ title: 'Edgar Cocco',
       route: '/projects',
       color: 'var(--accent-3, #01c0f0)',
       description: 'Personal projects and open source work',
-    },
+    },*/
     {
       label: 'Contact',
       route: '/contact',
@@ -67,8 +67,8 @@ title: 'Edgar Cocco',
     },
   ],
   footerInfo: {
-    author: 'Alicia Sykes',
-    authorSite: 'https://github.com/lissy93',
+    author: 'Edgar Cocco',
+    authorSite: 'https://github.com/edgarcocco',
     license: 'MIT',
     licenseLink: '',
     copyright: true,
@@ -123,101 +123,18 @@ title: 'Edgar Cocco',
   },
   workExperience: [
     {
-      company: 'AND.Digital',
-      companyUrl: 'https://and.digital/',
-      companyLogo: 'https://and.digital/favicon.ico',
-      jobTitle: 'Principle Engineer',
-      datesWorked: 'August 2022 - Present',
-      responsibilities: 'As a member of the Practice Group within Hamilton Club, '
-      + 'I work across several client projects, ensuring that '
-      + 'code quality, maintainability and security are top notch. '
-      + 'I\'m responsible for training up our developers, helping them gain '
-      + 'the skills necessary to best support our clients. '
-      + 'I\'m always up for trying out new tech, so that I\'m in a good position '
-      + 'to choose the best tech stacks on a per-client basis.',
-      projectType: 'Clients',
-      projects: [
-        { name: 'International SOS', logo: 'https://i.ibb.co/WgKKMFQ/Isos.jpg', description: '', },
-        { name: 'Frasers Group', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
-        { name: 'Lloyds Bank', logo: 'https://i.ibb.co/GCSDPCq/Lloyds-bank.jpg', description: '', },
-      ],
-      technologies: [ 'TypeScript', 'React Native', 'Azure' ],
-    },
-    {
-      company: 'Galaxy',
-      companyUrl: 'https://galaxy.com/',
-      companyLogo: 'https://i.ibb.co/fX2rF84/galaxy-digital.png',
-      jobTitle: 'VP Frontend Engineer',
-      datesWorked: 'Jan 2021 - July 2022',
-      responsibilities: 'Worked on real-time React-based Web3 trading application',
-      technologies: [ 'React', 'StoryBook', 'Cypress', 'web3js',],
-    },
-    {
       company: 'Freelance',
-      companyUrl: 'https://aliciasykes.com/',
+      companyUrl: 'https://edgarcocco.com/',
       companyLogo: 'https://i.ibb.co/Dt6kGFQ/brick.png',
       jobTitle: 'Full-Stack Developer',
-      datesWorked: 'February 2019 - Jan 2021',
+      datesWorked: 'January 2018 - Present',
       responsibilities: '',
       projectType: 'Projects',
       projects: [
-        { name: 'Futr.AI', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
-        { name: 'Shell', logo: 'https://i.ibb.co/7r1K9cb/Shell.png', description: '', },
-        { name: 'Shell Recharge', logo: 'https://i.ibb.co/BBdP2Wh/Shell-recharge.jpg', description: ''  },
-        { name: 'Machine Max', logo: 'https://i.ibb.co/XzXTKWF/machine-max.png', description: '', },
-        { name: 'Ctemplar', logo: 'https://i.ibb.co/2Sg6G3s/Ctemplar.png', description: '', },
+        { name: 'UCEDA INSTITUTE', logo: 'https://i.ibb.co/VMWZRwf/logo-sm.jpg', description: '', },
+        { name: 'STAPP', logo: 'https://i.ibb.co/42vhfNj/stapp-nocolors.png', description: '', },
       ],
-      technologies: [ 'React', 'React Native', 'TypeScript', 'GraphQL', 'GCP' ],
-    },
-    {
-      company: 'Accenture',
-      companyUrl: 'https://www.accenture.com/',
-      companyLogo: 'https://i.ibb.co/kcCKDF1/accenture.png',
-      jobTitle: 'Software Developer',
-      datesWorked: 'June 2014 - February 2019',
-      responsibilities: ''
-        + 'After joining as an associate, I had the opportunity to work on a range of exciting client projects, '
-        + 'each with their own challenges, his helped me to develop my skills and knowledge in a variety of areas. '
-        + 'Over time I worked my way up to a senior role, where I could actively deliver high quality solutions to clients.',
-        projectType: 'Clients',
-        projects: [
-        { name: 'E.ON', logo: 'https://i.ibb.co/4PcVN4B/Eon.png', description: '', },
-        { name: 'B&Q', logo: 'https://i.ibb.co/F79xSDK/Bandq.jpg', description: '', },
-        { name: 'Boots', logo: 'https://i.ibb.co/SnPtC8t/Boots.jpg', description: '', },
-        { name: 'TK Maxx', logo: 'https://i.ibb.co/MBkQVs1/tkmaxx.jpg', description: '', },
-        { name: 'Vodafone', logo: 'https://i.ibb.co/Zh1SwbR/Vodafone.png', description: '', },
-        { name: 'UKI Innovation Center', logo: 'https://i.ibb.co/1JX4Q9Y/Accenture-innovation.jpg', description: '', },
-      ],
-      technologies: [ 'C#', 'Angular', 'Node', 'AWS' ],
-    },
-    {
-      company: 'University of Oxford',
-      companyUrl: 'https://www.ox.ac.uk/',
-      companyLogo: 'https://i.ibb.co/QYmLPTX/oxford-uni.jpg',
-      jobTitle: 'Intern',
-      datesWorked: 'June 2013 - September 2013',
-      responsibilities: 'Worked on developing a Java application which would calculate the most '
-        + 'effective mg of antimalarial drug, per kg or patient body weight, to prevent vaccine resistance building up. '
-        + 'Involved dealing with millions of patient records, which were often in varying formats and units.',
-        projectType: 'Projects',
-        projects: [
-        { name: 'WWARN', logo: 'https://i.ibb.co/1R657nh/Wwarn.jpg', description: '', },
-      ],
-      technologies: [ 'Java', 'apachetomcat', 'junit', 'gradle' ],
-    },
-    {
-      company: 'British Army',
-      companyUrl: 'https://www.army.mod.uk/',
-      companyLogo: 'https://i.ibb.co/gv6mbKw/Army.jpg',
-      jobTitle: 'Soldier',
-      datesWorked: '',
-      responsibilities: '',
-      projectType: 'Regiments',
-      projects: [
-        { name: 'Signals', logo: 'https://i.ibb.co/F5mhzkr/Signals.png', description: '', },
-        { name: 'Oxford UOTC', logo: 'https://i.ibb.co/ZMH1TWq/ouotc.jpg', description: '', },
-        { name: 'Intelligence Corps', logo: 'https://i.ibb.co/svn2XLq/mi.jpg', description: '', },
-      ],
+      technologies: [ 'PHP', 'JavaScript','TypeScript', 'React','dotnet', 'apache' ],
     },
   ],
   projectComplimentaryData: [
@@ -409,30 +326,30 @@ title: 'Edgar Cocco',
     { postRef: '', thumbnail: '' },
   ],
   contact: {
-    name: 'Alicia Sykes',
-    email: 'alicia@omg.lol',
-    website: 'https://aliciasykes.com',
+    name: 'Edgar Cocco',
+    email: 'edgar34_@hotmail.com',
+    website: 'https://edgarcocco.com',
     socials: {
-      Twitter: '',
+      LinkedIn: 'in/edgarcocco',
       GitHub: 'edgarcocco',
+      Facebook: 'edgar.cocco',
+      Twitter: '',
       'Dev.to': '',
       Mastodon: '',
-      LinkedIn: 'in/edgarcocco',
-      Instagram: 'edgar.cocco',
+      Instagram: '',
       YouTube: '',
       Reddit: '',
       StackOverflow: '',
       KeyBase: '',
-      Facebook: 'edgar.cocco',
       PeerList: '',
       CodersRank: '',
       'OMG.lol': '',
     },
-    socialButtonLimit: 6,
+    socialButtonLimit: 2,
     mailerConfig: {
-      service_id: 'gmail',
-      template_id: 'website-contact-form',
-      user_id: 'user_K6F041q1dQvz8SJLSOZCR',
+      service_id: 'service_6dc0npn',
+      template_id: 'template_v5ajetn',
+      user_id: 'W2-atC-lCbVekQlhf',
       template_params: {},
     },
     pgpKeyLink: 'https://keybase.io/aliciasykes/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
@@ -479,7 +396,17 @@ title: 'Edgar Cocco',
     intro: 'Just your average dev...',
     bio: [
       "I'm Edgar, a software engineer based in Saint Petersburg, Florida.",
-      `Away from the keyboard, I like sports, hanging out with friends, and going to Church.`,
+      //under the computer programming and analysis program at St. Petersburg College.",
+      `I am currently completing my Associate in Science degree at St. Petersburg College, \n
+      where I am studying Computer Programming and Analysis.`,
+      `I'm currently working as a full-stack developer for <a href="https://uceda.org" target="_blank">UCEDA Institute</a>, 
+      helping the school with a Learning Management System (LMS) and other projects.`,
+      `Proficient in server infrastructure, for work I had to configure the infrastructure of production server, and also I have a home lab
+      running Proxmox which is where with a variety of services for personal use and work as well. (send me a <a href="/contact">message</a> if you want to talk about my server setup).`,
+      `I have experience working with a range of technologies and languages, including PHP, JavaScript, TypeScript, React, dotnet, and apache\n
+       with a passion for creating software that is both useful and enjoyable to use always looking to learn new things and improve my skills..`,
+      ``,
+      `Away from the keyboard, one of my favorite hobbies is to dance, working out at the gym and hanging out with friends.`,
     ],
     picture: 'https://i.ibb.co/qdbkD2t/PXL-20240929-161703972.jpg',
   },
@@ -612,7 +539,7 @@ title: 'Edgar Cocco',
   },
   plausible: {
     scriptSrc: 'https://no-track.as93.net/js/script.js',
-    domain: 'aliciasykes.com',
+    domain: 'edgarcocco.com',
   },
 };
 

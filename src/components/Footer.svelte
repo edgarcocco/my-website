@@ -10,8 +10,8 @@
     © <a href={footerInfo.authorSite} target="_blank" rel="noreferrer">{footerInfo.author}</a>
     {new Date().getFullYear()} - Licensed under
     <a href={footerInfo.licenseLink} target="_blank" rel="noreferrer">{footerInfo.license}</a> -
-    View on <a href={source} target="_blank" rel="noreferrer">
-      GitHub <Icon name="github" color="var(--accent)" /></a>
+    descended <a href={source} target="_blank" rel="noreferrer">
+      from <Icon name="github" color="var(--accent)" /></a>
   </p>
 </footer>
 

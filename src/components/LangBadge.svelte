@@ -26,6 +26,7 @@
     c: { name: 'C', color: 'A8B9CC', icon: 'c' },
     'c++': { name: 'C++', color: '00599C', icon: 'cplusplus' },
     'c#': { name: 'C#', color: '239120', icon: 'csharp' },
+    dotnet: { name: '.NET', color: '512BD4', icon: 'dotnet' },
     coffeescript: { name: 'CoffeeScript', color: '2F2625', icon: 'coffeescript' },
     crystal: { name: 'crystal', color: '000000', icon: 'crystal' },
     css: { name: 'CSS', color: '563D7C', icon: 'css3' },

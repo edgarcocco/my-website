@@ -13,31 +13,15 @@
 
   const keys = [
     {
-      label: 'PGP',
-      value: 'FEDB 68F5 5C02 83A7',
-      link: 'https://keybase.io/aliciasykes/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
-    },
-    {
       label: 'Email',
-      value: 'alicia at omg dot lol',
-      link: 'mailto:alicia@omg.lol',
+      value: 'edgar34_@hotmail.com',
+      link: 'mailto:edgar34_@hotmail.com',
     },
-    {
-      label: 'Matrix',
-      value: '@lissy93:matrix.org',
-      link: 'https://matrix.to/#/@lissy93:matrix.org',
-    },
-    {
-      label: 'XMPP',
-      value: 'alicia@xmpp.is',
-      link: 'xmpp:alicia@xmpp.is?join',
-    },
-    { label: 'Signal', value: 'trusted contacts only', link: '' },
   ];
 </script>
 
 <div class="pgp-container">
-  <Heading level="h2" color="var(--accent)">keys</Heading>
+  <Heading level="h2" color="var(--accent)">contact_me</Heading>
 
   {#each keys as key}
     <div class="key-row">

@@ -44,18 +44,21 @@
   </section>
 
   <!-- Technology Stack -->
+{#if false }
   <section class="stack">
     <TechStack/>
   </section>
+  {/if}
 
   <!-- Social links -->
   <!-- <section class="soclials"></section> -->
   
   <!-- CV -->
+ {#if false }
   <section class="resume">
-    <Resume />
+   <Resume />
   </section>
-
+  {/if}
 </div>
 
 <style lang="scss">
