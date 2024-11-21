@@ -21,7 +21,6 @@
       '...and learn new things. 📚',
       'Thanks for visiting 🥰',
     ];
-    console.log(data);
 
     const typeWithVariableSpeed = (instance: TypeIt, text: string) => {
       Array.from(text).forEach(char => {

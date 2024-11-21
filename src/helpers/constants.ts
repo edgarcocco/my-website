@@ -37,6 +37,12 @@ export const socialNetworks: SocialNetwork[] = [
     link: 'https://www.instagram.com/',
   },
   {
+    name:'itchio',
+    icon: 'itch-io',
+    tone:'#FA5C5C',
+    link: 'https://itch.io/profile/',
+  },
+  {
     name: 'YouTube',
     icon: 'youtube',
     tone: '#FF0000',
