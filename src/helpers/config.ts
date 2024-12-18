@@ -409,7 +409,7 @@ title: 'Edgar Cocco',
       ``,
       `Away from the keyboard, one of my favorite hobbies is to dance, working out at the gym and hanging out with friends.`,
     ],
-    picture: 'https://i.ibb.co/qdbkD2t/PXL-20240929-161703972.jpg',
+    picture: 'https://i.ibb.co/1ZxPN0R/EDGAR-PSD-2.png',
   },
   techStack: {
     backend: [
