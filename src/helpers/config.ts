@@ -402,8 +402,8 @@ title: 'Edgar Cocco',
       where I am studying Computer Programming and Analysis.`,
       `I'm currently working as a full-stack developer for <a href="https://uceda.org" target="_blank">UCEDA Institute</a>, 
       helping the school with a Learning Management System (LMS) and other projects.`,
-      `Proficient in server infrastructure, for work I had to configure the infrastructure of production server, and also I have a home lab
-      running Proxmox which is where with a variety of services for personal use and work as well. (send me a <a href="/contact">message</a> if you want to talk about home labs!).`,
+      `Proficient in server infrastructure, for work I had to configure the infrastructure of production server, and also I have a home server
+      running Proxmox which is where I host a variety of services for personal use and work as well. (send me a <a href="/contact">message</a> if you want to talk about home labs!).`,
       `I have experience working with a range of technologies and languages, including PHP, JavaScript, TypeScript, React, dotnet, and apache\n
        with a passion for creating software that is both useful and enjoyable to use always looking to learn new things and improve my skills..`,
       ``,
